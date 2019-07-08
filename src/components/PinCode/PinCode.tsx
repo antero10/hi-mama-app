@@ -39,21 +39,24 @@ class PinCode extends React.Component<any, any>  {
   public render(): any {
     return (
       <div className="pinCode">
+        <div></div>
         <div>
-          <h1 className="clock">
-            <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
-          </h1>
-        <div>
-        </div>
           <div>
-            <PinInput
-              length={4}
-              initialValue=""
-              type="numeric"
-              style={{padding: '10px'}}
-              ref={this.onRef}
-              onComplete={this.onPinCompleted}
-            />
+            <h1 className="clock">
+              <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
+            </h1>
+          <div>
+          </div>
+            <div>
+              <PinInput
+                length={4}
+                initialValue=""
+                type="numeric"
+                style={{padding: '10px'}}
+                ref={this.onRef}
+                onComplete={this.onPinCompleted}
+              />
+            </div>
           </div>
         </div>
       </div>
